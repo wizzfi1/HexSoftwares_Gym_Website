@@ -19,14 +19,15 @@ jobs:
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload static files
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: |
             index.html
             style.css
             images/
-            scripts/
+            script.js
             assets/
             favicon.ico
 
@@ -37,6 +38,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
