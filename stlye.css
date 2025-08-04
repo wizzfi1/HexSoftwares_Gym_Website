@@ -1,14 +1,19 @@
-/* Reset & Base */
-body {
-  font-family: Arial, sans-serif;
+/* Base Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 section {
@@ -21,48 +26,49 @@ a {
   color: inherit;
 }
 
-img.responsive {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Hero */
+/* Hero Section */
 #hero {
   position: relative;
   text-align: center;
   color: white;
 }
+
 .hero-image {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
 }
+
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 10px;
 }
+
 .btn-primary {
-  display: inline-block;
   margin-top: 1rem;
   padding: 12px 24px;
   background-color: #0077cc;
   color: white;
   border-radius: 8px;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Grid Layouts */
+.btn-primary:hover {
+  background-color: #005fa3;
+}
+
+/* Grid System */
 .grid {
   display: grid;
   gap: 1.5rem;
 }
+
 @media (min-width: 600px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -71,12 +77,11 @@ img.responsive {
 
 /* Services Section */
 #services {
-  padding: 2rem;
-  text-align: center;
+  background: #fff;
 }
 
 .service-card {
-  background-color: white;
+  background: white;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -89,7 +94,6 @@ img.responsive {
 
 .service-card h3 {
   color: #0077cc;
-  margin-top: 1rem;
 }
 
 .service-card p {
@@ -99,59 +103,34 @@ img.responsive {
 .icon {
   width: 48px;
   height: 48px;
-  stroke: #0077cc;
   margin-bottom: 1rem;
-}
-
-/* Dark Mode for Services */
-body.dark-mode .service-card {
-  background-color: #1c1c1c;
-  color: #eee;
-}
-
-body.dark-mode .icon {
-  stroke: #4db8ff;
-}
-
-
-/* Facilities */
-.facility-card {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Membership Section */
 #membership {
-  padding: 2rem;
-  text-align: center;
+  background: #fafafa;
 }
 
 .membership-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
 }
 
 .plan-card {
-  background-color: white;
+  background: white;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
   text-align: left;
-  position: relative;
 }
 
 .plan-card h3 {
   color: #0077cc;
-  margin-top: 0;
 }
 
 .price {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0.5rem 0;
 }
@@ -172,7 +151,6 @@ body.dark-mode .icon {
   color: white;
   padding: 10px 16px;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
 }
@@ -185,41 +163,19 @@ body.dark-mode .icon {
   border: 2px solid #0077cc;
 }
 
-/* Dark mode support */
-body.dark-mode .plan-card {
-  background-color: #1c1c1c;
-  color: #eee;
-}
-
-body.dark-mode .btn-join {
-  background-color: #4db8ff;
-}
-
-body.dark-mode .btn-join:hover {
-  background-color: #3aa5e0;
-}
-
-.plan-card {
+/* Facilities Section */
+.facility-card {
   background: white;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
-  border: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.plan-card.popular {
-  border-color: #0077cc;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-.plan-card .price {
-  font-size: 1.5rem;
-  color: #0077cc;
-  margin: 1rem 0;
-}
-.plan-card ul {
-  list-style: none;
-  padding: 0;
-}
-.plan-card li {
-  margin: 0.5rem 0;
+
+img.responsive {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Footer */
