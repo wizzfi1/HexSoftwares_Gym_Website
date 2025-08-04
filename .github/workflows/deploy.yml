@@ -19,11 +19,17 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact manually (site contents)
+      - name: Upload artifact manually (clean site only)
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: .
+          path: |
+            index.html
+            style.css
+            favicon.ico
+            assets/
+            js/
+            images/
 
   deploy:
     needs: build
