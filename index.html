@@ -2,86 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FitLife Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hex Gym | Strength Starts Here</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <header>
-    <h1>FitLife Gym</h1>
-    <nav>
-      <a href="#facilities">Facilities</a>
-      <a href="#services">Services</a>
-      <a href="#membership">Membership</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Transform Your Body, Transform Your Life</h2>
-    <p>Join our community today and start your fitness journey.</p>
+  <!-- HERO -->
+  <section id="hero">
+    <img src="images/hero-gym.jpg" alt="Gym Hero" class="hero-image" />
+    <div class="hero-text">
+      <h1>Welcome to Hex Gym</h1>
+      <p>Your transformation starts here 💪</p>
+      <a href="#membership" class="btn-primary">Join Now</a>
+    </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>What We Offer</h2>
+    <div class="grid services-grid">
+      <div class="service-card">
+        <img src="images/icons/dumbbell.svg" alt="Strength" />
+        <h3>Strength Training</h3>
+        <p>Build muscle and endurance with free weights and machines.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icons/heartbeat.svg" alt="Cardio" />
+        <h3>Cardio Programs</h3>
+        <p>Burn fat and boost stamina with HIIT & endurance workouts.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/icons/lotus.svg" alt="Yoga" />
+        <h3>Yoga & Mobility</h3>
+        <p>Relax, stretch, and restore with guided yoga sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="membership">
+    <h2>Membership Plans</h2>
+    <div class="membership-grid">
+  
+      <div class="plan-card">
+        <h3>Starter</h3>
+        <p class="price">₦5,000/mo</p>
+        <ul>
+          <li>Access to gym floor</li>
+          <li>Locker room & showers</li>
+          <li>1 group class/week</li>
+        </ul>
+        <a href="#" class="btn-join">Join Now</a>
+      </div>
+  
+      <div class="plan-card popular">
+        <h3>Pro</h3>
+        <p class="price">₦10,000/mo</p>
+        <ul>
+          <li>All Starter perks</li>
+          <li>Unlimited group classes</li>
+          <li>Access to cardio & yoga zones</li>
+          <li>1 PT session/month</li>
+        </ul>
+        <a href="#" class="btn-join">Join Now</a>
+      </div>
+  
+      <div class="plan-card">
+        <h3>Elite</h3>
+        <p class="price">₦18,000/mo</p>
+        <ul>
+          <li>All Pro perks</li>
+          <li>Dedicated coach & nutritionist</li>
+          <li>Priority class booking</li>
+          <li>24/7 access</li>
+        </ul>
+        <a href="#" class="btn-join">Join Now</a>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- FACILITIES -->
   <section id="facilities">
     <h2>Our Facilities</h2>
-    <div class="facility-grid">
-      <div class="facility">
-        <img src="images/gym-floor.jpg" alt="Gym Floor" />
-        <h3>Gym Floor</h3>
+    <div class="grid">
+      <div class="facility-card">
+        <img src="images/gym-floor.jpg" alt="Gym Floor" class="responsive" />
+        <h3>Main Gym Floor</h3>
       </div>
-      <div class="facility">
-        <img src="images/cardio.jpg" alt="Cardio Zone" />
+      <div class="facility-card">
+        <img src="images/cardio.jpg" alt="Cardio Zone" class="responsive" />
         <h3>Cardio Zone</h3>
       </div>
-      <div class="facility">
-        <img src="images/yoga.jpg" alt="Yoga Studio" />
+      <div class="facility-card">
+        <img src="images/yoga.jpg" alt="Yoga Studio" class="responsive" />
         <h3>Yoga Studio</h3>
       </div>
-      <div class="facility">
-        <img src="images/pool.jpg" alt="Swimming Pool" />
+      <div class="facility-card">
+        <img src="images/pool.jpg" alt="Swimming Pool" class="responsive" />
         <h3>Swimming Pool</h3>
       </div>
     </div>
   </section>
 
   <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Personal Training</li>
-      <li>Nutrition Coaching</li>
-      <li>Group Classes</li>
-      <li>Massage Therapy</li>
-    </ul>
+    <h2>Our Services</h2>
+    <div class="grid">
+      
+      <!-- Strength Training -->
+      <div class="service-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 6v12M18 6v12M9 12h6M3 10h3v4H3zM18 10h3v4h-3z"/>
+        </svg>
+        <h3>Strength Training</h3>
+        <p>High-intensity resistance programs designed to build lean muscle and power.</p>
+      </div>
+  
+      <!-- Cardio Programs -->
+      <div class="service-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.8 4.6A5.5 5.5 0 0012 8.4 5.5 5.5 0 003.2 4.6a5.5 5.5 0 000 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 000-7.8z"/>
+        </svg>
+        <h3>Cardio Programs</h3>
+        <p>Endurance-building routines including HIIT, treadmill, and cycling zones.</p>
+      </div>
+  
+      <!-- Yoga & Mobility -->
+      <div class="service-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </svg>
+        <h3>Yoga & Mobility</h3>
+        <p>Mindful movement classes for flexibility, balance, and full-body recovery.</p>
+      </div>
+  
+    </div>
   </section>
+  
 
+  <!-- MEMBERSHIP -->
   <section id="membership">
     <h2>Membership Plans</h2>
-    <div class="plan">
-      <h3>Basic</h3>
-      <p>$30/month - Gym Access</p>
-    </div>
-    <div class="plan">
-      <h3>Standard</h3>
-      <p>$50/month - Access + Classes</p>
-    </div>
-    <div class="plan">
-      <h3>Premium</h3>
-      <p>$70/month - All Access + Personal Trainer</p>
+    <div class="grid membership-grid">
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">$19/mo</p>
+        <ul>
+          <li>Gym Access (6am–6pm)</li>
+          <li>1 Fitness Assessment</li>
+        </ul>
+        <a href="#" class="btn-primary">Get Started</a>
+      </div>
+      <div class="plan-card popular">
+        <h3>Pro</h3>
+        <p class="price">$35/mo</p>
+        <ul>
+          <li>24/7 Access</li>
+          <li>Group Classes</li>
+          <li>Trainer Support</li>
+        </ul>
+        <a href="#" class="btn-primary">Most Popular</a>
+      </div>
+      <div class="plan-card">
+        <h3>Elite</h3>
+        <p class="price">$55/mo</p>
+        <ul>
+          <li>All Pro Perks</li>
+          <li>Personal Trainer (2x/week)</li>
+          <li>Nutrition Plan</li>
+        </ul>
+        <a href="#" class="btn-primary">Join Elite</a>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@fitlifegym.com</p>
-    <p>Phone: +1 (555) 123-4567</p>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 FitLife Gym. All rights reserved.</p>
+    <p>&copy; 2025 Hex Gym. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
