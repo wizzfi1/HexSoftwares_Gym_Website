@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FitLife Gym</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>WizFit Gym</h1>
+    <h1>FitLife Gym</h1>
     <nav>
       <a href="#facilities">Facilities</a>
       <a href="#services">Services</a>
@@ -24,12 +26,24 @@
 
   <section id="facilities">
     <h2>Our Facilities</h2>
-    <ul>
-      <li>Fully-equipped gym floor</li>
-      <li>Cardio Zone</li>
-      <li>Yoga Studio</li>
-      <li>Swimming Pool</li>
-    </ul>
+    <div class="facility-grid">
+      <div class="facility">
+        <img src="images/gym-floor.jpg" alt="Gym Floor" />
+        <h3>Gym Floor</h3>
+      </div>
+      <div class="facility">
+        <img src="images/cardio.jpg" alt="Cardio Zone" />
+        <h3>Cardio Zone</h3>
+      </div>
+      <div class="facility">
+        <img src="images/yoga.jpg" alt="Yoga Studio" />
+        <h3>Yoga Studio</h3>
+      </div>
+      <div class="facility">
+        <img src="images/pool.jpg" alt="Swimming Pool" />
+        <h3>Swimming Pool</h3>
+      </div>
+    </div>
   </section>
 
   <section id="services">
@@ -67,7 +81,7 @@
   <footer>
     <p>&copy; 2025 FitLife Gym. All rights reserved.</p>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
