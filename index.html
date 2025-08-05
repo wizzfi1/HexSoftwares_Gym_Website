@@ -2,122 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WizFIT Gym</title>
-  <meta name="description" content="WizFIT – a professional modern gym offering training, wellness, and community.">
-  <meta name="keywords" content="WizFIT, Gym, Fitness, Workout, Wellness, Personal Training">
-  <meta property="og:title" content="WizFIT Gym">
-  <meta property="og:description" content="Join WizFIT – your ultimate fitness destination. Explore our training zones, services, and plans.">
-  <meta property="og:image" content="./images/hero-gym.jpg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourusername.github.io/HexSoftwares_Gym_Website/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hex Gym | Strength Starts Here</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <h1>WizFIT</h1>
-    <nav id="nav">
-      <a href="#about">About</a>
-      <a href="#facilities">Facilities</a>
-      <a href="#services">Services</a>
-      <a href="#plans">Membership Plans</a>
-    </nav>
-    <div id="hamburger">&#9776;</div>
-  </header>
-
+  <!-- HERO -->
   <section id="hero">
-    <div class="hero-content">
-      <h2>Transform Your Body</h2>
-      <p>Join the best gym in town. Get started today.</p>
-      <a href="#plans" class="cta-button">View Plans</a>
+    <img src="images/hero-gym.jpg" alt="Gym Hero" class="hero-image" />
+    <div class="hero-text">
+      <h1>Welcome to Hex Gym</h1>
+      <p>Your transformation starts here 💪</p>
+      <a href="#membership" class="btn-primary">Join Now</a>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About WizFIT</h2>
-    <p class="about-text">
-      WizFIT is more than just a gym—it's a space for personal growth and strength. Our modern facilities, expert staff, and diverse training programs are designed to help everyone—from beginners to athletes—reach their full potential.
-    </p>
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="service-card">
+        <h3>Strength Training</h3>
+        <p>Build muscle and endurance with free weights and machines.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cardio Programs</h3>
+        <p>Burn fat and boost stamina with HIIT & endurance workouts.</p>
+      </div>
+      <div class="service-card">
+        <h3>Yoga & Mobility</h3>
+        <p>Relax, stretch, and restore with guided yoga sessions.</p>
+      </div>
+    </div>
   </section>
 
+  <!-- MEMBERSHIP PLANS -->
+  <section id="membership">
+    <h2>Membership Plans</h2>
+    <div class="membership-grid">
+      <div class="plan-card">
+        <h3>Starter</h3>
+        <p class="price">₦5,000/mo</p>
+        <ul>
+          <li>Gym Access (6am–6pm)</li>
+          <li>Locker Room & Showers</li>
+          <li>1 Group Class/Week</li>
+        </ul>
+        <a href="#" class="btn-join">Join Now</a>
+      </div>
+      <div class="plan-card popular">
+        <h3>Pro</h3>
+        <p class="price">₦10,000/mo</p>
+        <ul>
+          <li>24/7 Access</li>
+          <li>Unlimited Group Classes</li>
+          <li>Cardio & Yoga Zones</li>
+          <li>1 PT Session/Month</li>
+        </ul>
+        <a href="#" class="btn-join">Most Popular</a>
+      </div>
+      <div class="plan-card">
+        <h3>Elite</h3>
+        <p class="price">₦18,000/mo</p>
+        <ul>
+          <li>All Pro Perks</li>
+          <li>Dedicated Coach & Nutritionist</li>
+          <li>Priority Class Booking</li>
+          <li>24/7 Access</li>
+        </ul>
+        <a href="#" class="btn-join">Join Elite</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
   <section id="facilities">
     <h2>Our Facilities</h2>
-    <div class="card-grid">
-      <div class="card">
-        <img src="./images/weight-area.jpg" alt="Weight Area" loading="lazy">
-        <h3>Weight Area</h3>
+    <div class="grid">
+      <div class="facility-card">
+        <img src="images/gym-floor.jpg" alt="Gym Floor" class="responsive" />
+        <h3>Main Gym Floor</h3>
         <p>Top-tier equipment for strength training.</p>
       </div>
-      <div class="card">
-        <img src="./images/yoga-class.jpg" alt="Yoga Studio" loading="lazy">
+      <div class="facility-card">
+        <img src="images/cardio.jpg" alt="Cardio Zone" class="responsive" />
+        <h3>Cardio Zone</h3>
+        <p>Endurance machines and HIIT space.</p>
+      </div>
+      <div class="facility-card">
+        <img src="images/yoga.jpg" alt="Yoga Studio" class="responsive" />
         <h3>Yoga Studio</h3>
         <p>Peaceful space for flexibility and flow.</p>
       </div>
-      <div class="card">
-        <img src="./images/relax-zone.jpg" alt="Relaxation Zone" loading="lazy">
-        <h3>Relax Zone</h3>
-        <p>Unwind after intense sessions in our recovery zone.</p>
+      <div class="facility-card">
+        <img src="images/pool.jpg" alt="Swimming Pool" class="responsive" />
+        <h3>Swimming Pool</h3>
+        <p>Relax and recover after workouts.</p>
       </div>
     </div>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="card-grid">
-      <div class="card">
-        <img src="./images/personal-trainer.jpg" alt="Personal Training" loading="lazy">
-        <h3>Personal Training</h3>
-        <p>1-on-1 sessions with certified trainers.</p>
-      </div>
-      <div class="card">
-        <img src="./images/nutrition.jpg" alt="Nutrition Coaching" loading="lazy">
-        <h3>Nutrition Coaching</h3>
-        <p>Meal planning and healthy lifestyle guidance.</p>
-      </div>
-      <div class="card">
-        <img src="./images/group-class.jpg" alt="Group Classes" loading="lazy">
-        <h3>Group Classes</h3>
-        <p>HIIT, Yoga, Zumba & more—daily sessions.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="plans">
-    <h2>Membership Plans</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Basic Plan</h3>
-        <p>$29 / month</p>
-        <ul>
-          <li>Gym Access</li>
-          <li>Locker</li>
-          <li>1 Class / week</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Standard Plan</h3>
-        <p>$49 / month</p>
-        <ul>
-          <li>All Basic features</li>
-          <li>Unlimited Classes</li>
-          <li>2 PT Sessions / month</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Premium Plan</h3>
-        <p>$79 / month</p>
-        <ul>
-          <li>All Standard features</li>
-          <li>Relax Zone Access</li>
-          <li>4 PT Sessions / month</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 WizFIT. All rights reserved.</p>
+    <p>&copy; 2025 Hex Gym. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
