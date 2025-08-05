@@ -3,7 +3,7 @@ name: Deploy Gym Website to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master' if that's your default
+      - main
 
 permissions:
   contents: write
