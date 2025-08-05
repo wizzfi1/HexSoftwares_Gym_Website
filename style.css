@@ -141,7 +141,7 @@ footer {
   text-align: center;
 }
 
-/* Hero section (optional) */
+/* Hero section */
 #hero {
   background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.6)),
               url('./images/hero-gym.jpg') no-repeat center center/cover;
@@ -153,6 +153,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
 .hero-content h2 {
   font-size: 48px;
