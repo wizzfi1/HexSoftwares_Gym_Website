@@ -164,6 +164,23 @@ footer {
   font-size: 20px;
   margin-bottom: 20px;
 }
+.hero-content {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .cta-button {
   background: #f39c12;
@@ -200,4 +217,22 @@ body.dark nav a:hover {
 body.dark footer,
 body.dark header {
   background: #000;
+}
+.hero-content h2,
+.hero-content p,
+.hero-content .cta-button {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+.hero-content h2 {
+  animation-delay: 0.2s;
+}
+
+.hero-content p {
+  animation-delay: 0.4s;
+}
+
+.hero-content .cta-button {
+  animation-delay: 0.6s;
 }
