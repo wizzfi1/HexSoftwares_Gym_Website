@@ -3,14 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WizFIT</title>
-  <link rel="stylesheet" href="./style.css" />
+  <title>WizFIT Gym</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <h1>WizFIT</h1>
+    <nav id="nav">
+      <a href="#facilities">Facilities</a>
+      <a href="#services">Services</a>
+      <a href="#plans">Membership Plans</a>
+    </nav>
+    <div id="hamburger">&#9776;</div>
   </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Transform Your Body</h2>
+      <p>Join the best gym in town. Get started today.</p>
+      <a href="#plans" class="cta-button">View Plans</a>
+    </div>
+  </section>
 
   <section id="facilities">
     <h2>Our Facilities</h2>
@@ -18,17 +32,17 @@
       <div class="card">
         <img src="./images/weight-area.jpg" alt="Weight Area">
         <h3>Weight Area</h3>
-        <p>Full range of free weights and machines.</p>
+        <p>Top-tier equipment for strength training.</p>
       </div>
       <div class="card">
-        <img src="./images/equipment.jpg" alt="Gym Equipment">
-        <h3>Modern Equipment</h3>
-        <p>Top-quality equipment for all workout needs.</p>
+        <img src="./images/yoga.jpg" alt="Yoga Studio">
+        <h3>Yoga Studio</h3>
+        <p>Peaceful space for flexibility and flow.</p>
       </div>
       <div class="card">
-        <img src="./images/relax-zone.jpg" alt="Sauna and Relax Zone">
-        <h3>Relax Zones</h3>
-        <p>Unwind in our sauna after training.</p>
+        <img src="./images/sauna.jpg" alt="Sauna">
+        <h3>Sauna</h3>
+        <p>Relax and recover after intense workouts.</p>
       </div>
     </div>
   </section>
@@ -39,17 +53,50 @@
       <div class="card">
         <img src="./images/personal-trainer.jpg" alt="Personal Training">
         <h3>Personal Training</h3>
-        <p>Custom plans and 1-on-1 coaching.</p>
+        <p>1-on-1 sessions with certified trainers.</p>
+      </div>
+      <div class="card">
+        <img src="./images/nutrition.jpg" alt="Nutrition Coaching">
+        <h3>Nutrition Coaching</h3>
+        <p>Meal planning and healthy lifestyle guidance.</p>
       </div>
       <div class="card">
         <img src="./images/group-class.jpg" alt="Group Classes">
-        <h3>Group Fitness</h3>
-        <p>HIIT, Cardio, and more with peers.</p>
+        <h3>Group Classes</h3>
+        <p>HIIT, Yoga, Zumba & more—daily sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2>Membership Plans</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Basic Plan</h3>
+        <p>$29 / month</p>
+        <ul>
+          <li>Gym Access</li>
+          <li>Locker</li>
+          <li>1 Class / week</li>
+        </ul>
       </div>
       <div class="card">
-        <img src="./images/yoga-class.jpg" alt="Yoga Studio">
-        <h3>Yoga & Flexibility</h3>
-        <p>Daily yoga classes in a calm space.</p>
+        <h3>Standard Plan</h3>
+        <p>$49 / month</p>
+        <ul>
+          <li>All Basic features</li>
+          <li>Unlimited Classes</li>
+          <li>2 PT Sessions / month</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Premium Plan</h3>
+        <p>$79 / month</p>
+        <ul>
+          <li>All Standard features</li>
+          <li>Sauna Access</li>
+          <li>4 PT Sessions / month</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -58,6 +105,6 @@
     <p>&copy; 2025 WizFIT. All rights reserved.</p>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
