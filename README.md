@@ -46,18 +46,22 @@ cd HexSoftwares_Gym_Website
 ```
 
 🚢 Deploy with GitHub Actions
+
 -Push to main branch
 
 -dist/ folder is built and auto-deployed using peaceiris/actions-gh-pages
 
 # .github/workflows/deploy.yml
+```
 - name: Build static site
   run: |
     mkdir dist
     cp index.html style.css script.js -t dist/
+```
 
 📷 Image Sources
 All images are local assets compressed and optimized using squoosh.app.
+
 
 📄 License
 MIT License — free to use, modify, and share.
