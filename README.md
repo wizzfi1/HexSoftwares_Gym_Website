@@ -1,6 +1,9 @@
 # WizFIT Gym Website
 
-A responsive, single-page gym website for **WizFIT**, featuring modern design, animations, and mobile support.
+WizFIT is a professional, responsive single-page gym website showcasing modern gym facilities, services, and membership plans. Built using **HTML5**, **CSS3**, and **JavaScript**, it features animated UI, responsive design, smooth scrolling, and a GitHub Pages deployment pipeline via **GitHub Actions**.
+
+![Hero Image](./images/hero-gym.jpg)
+
 
 ---
 
