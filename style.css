@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
+  background: #f0f0f0;
   padding: 40px;
-  background: #f2f2f2;
 }
 
 h2 {
@@ -18,16 +18,20 @@ h2 {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
 .card {
-  background: white;
+  background: #fff;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
+  transition: transform 0.2s ease;
   text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -37,12 +41,12 @@ h2 {
 }
 
 .card h3 {
-  padding: 16px 0 8px;
   font-size: 20px;
+  margin: 16px 0 8px;
 }
 
 .card p {
-  padding: 0 20px 20px;
-  font-size: 16px;
+  padding: 0 16px 20px;
   color: #555;
+  font-size: 15px;
 }
