@@ -165,3 +165,16 @@ footer {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+/* About */
+#about {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+.about-text {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
