@@ -1,4 +1,4 @@
-// Smooth scroll
+// Smooth scroll to sections
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -9,6 +9,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         behavior: 'smooth'
       });
     }
+
+    // Close mobile menu after click
+    document.getElementById('nav').classList.remove('show');
   });
 });
 
@@ -32,10 +35,11 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// Mobile nav toggle
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
 hamburger.addEventListener('click', () => {
   nav.classList.toggle('show');
 });
-
