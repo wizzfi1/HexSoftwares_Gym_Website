@@ -3,7 +3,7 @@ document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('nav').classList.toggle('show');
 });
 
-// Optional: Smooth scroll behavior
+// Smooth scroll
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
