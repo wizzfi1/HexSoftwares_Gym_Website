@@ -222,3 +222,85 @@ footer {
   background-color: #222;
   color: white;
 }
+/* Animation Keyframes */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animate Hero Text */
+.hero-text h1,
+.hero-text p,
+.hero-text .btn-primary {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+.hero-text h1 {
+  animation-delay: 0.2s;
+}
+
+.hero-text p {
+  animation-delay: 0.4s;
+}
+
+.hero-text .btn-primary {
+  animation-delay: 0.6s;
+}
+
+/* Animate Sections on Load */
+section h2 {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Animate Cards (Facilities, Services, Membership) */
+.card,
+.facility-card,
+.service-card,
+.plan-card {
+  opacity: 0;
+  animation: zoomIn 0.6s ease-out forwards;
+}
+
+/* Animation Staggering */
+.card:nth-child(1),
+.facility-card:nth-child(1),
+.service-card:nth-child(1),
+.plan-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(2),
+.facility-card:nth-child(2),
+.service-card:nth-child(2),
+.plan-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(3),
+.facility-card:nth-child(3),
+.service-card:nth-child(3),
+.plan-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(4),
+.facility-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
